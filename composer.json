@@ -1,0 +1,21 @@
+{
+    "name": "schams-net/typo3v11",
+    "type": "typo3-cms-extension",
+    "description": "Demo/test extension for TYPO3 v11",
+    "require": {
+        "typo3/cms-core": "^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "SchamsNet\\Typo3v11\\": "Classes"
+        }
+    },
+    "replace": {
+        "typo3-ter/typo3v11": "self.version"
+    },
+    "extra": {
+       "typo3/cms": {
+          "extension-key": "typo3v11"
+       }
+    }
+}
