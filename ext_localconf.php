@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * TYPO3 local configuration file
+ * TYPO3 v11 Test Extension
  * @author Michael Schams | https://schams.net
  */
 

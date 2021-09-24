@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * TYPO3 Extension Manager configuration file
+ * TYPO3 v11 Test Extension
  * @author Michael Schams | https://schams.net
  *
  * NOTE: This file is not required in Composer-based TYPO3 installations anymore.

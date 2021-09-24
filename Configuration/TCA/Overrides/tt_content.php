@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * TYPO3 Configuration Array (TCA) to override the tt_content model
+ * TYPO3 v11 Test Extension
  * @author Michael Schams | https://schams.net
  */
 

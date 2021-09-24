@@ -1,0 +1,17 @@
+services:
+
+  SchamsNet\Typo3v11\Command\CreateDemoPageTreeCommand:
+    tags:
+      - name: 'console.command'
+        command: 'create:pagetree'
+        description: 'A demo command to create a demo page tree'
+        hidden: false
+        schedulable: false
+
+  SchamsNet\Typo3v11\Command\CreatePageCommand:
+    tags:
+      - name: 'console.command'
+        command: 'create:page'
+        description: 'Create a single page'
+        hidden: false
+        schedulable: false
