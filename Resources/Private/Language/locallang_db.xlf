@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-09-24T00:00:00Z" product-name="typo3v11">
+		<header/>
+		<body>
+			<trans-unit id="tx_typo3v11_domain_model_example">
+				<source>Example</source>
+			</trans-unit>
+			<trans-unit id="tx_typo3v11_domain_model_example.title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

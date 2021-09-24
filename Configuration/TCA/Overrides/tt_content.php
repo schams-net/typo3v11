@@ -13,5 +13,5 @@ defined('TYPO3_MODE') or die();
     'Frontend',
     //'LLL:EXT:typo3v11/Resources/Private/Language/locallang_be.xlf:title',
     'Frontend Plugin',
-    'EXT:typo3v11/Resources/Public/Icons/frontend-plugin.svg'
+    'EXT:typo3v11/Resources/Public/Icons/typo3.svg'
 );

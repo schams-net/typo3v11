@@ -1,5 +1,14 @@
 services:
 
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SchamsNet\Typo3v11\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
   SchamsNet\Typo3v11\Command\CreateDemoPageTreeCommand:
     tags:
       - name: 'console.command'

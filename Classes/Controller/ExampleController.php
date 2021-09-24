@@ -8,10 +8,26 @@ namespace SchamsNet\Typo3v11\Controller;
  */
 
 use \Psr\Http\Message\ResponseInterface;
+use \SchamsNet\Typo3v11\Domain\Model\Example;
+use \SchamsNet\Typo3v11\Domain\Repository\ExampleRepository;
 use \TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 class ExampleController extends ActionController
 {
+    private $exampleRepository;
+
+    /**
+     * Constructor
+     *
+     * @access public
+     * @return void
+     */
+    public function __construct(
+        ExampleRepository $exampleRepository
+    ) {
+        $this->exampleRepository = $exampleRepository;
+    }
+
     /**
      * List action
      *
@@ -20,6 +36,8 @@ class ExampleController extends ActionController
      */
     public function listAction(): ResponseInterface
     {
+        $items = $this->exampleRepository->findAll();
+        $this->view->assign('items', $items);
         return $this->htmlResponse();
     }
 
@@ -27,11 +45,12 @@ class ExampleController extends ActionController
      * Detail view action
      *
      * @access public
+     * @param Example $item
      * @return ResponseInterface
      */
-    public function detailAction(): ResponseInterface
+    public function showAction(Example $item): ResponseInterface
     {
+        $this->view->assign('item', $item);
         return $this->htmlResponse();
-        //return $this->jsonResponse();
     }
 }

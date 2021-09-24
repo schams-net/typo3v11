@@ -18,10 +18,10 @@ defined('TYPO3') or die();
         'Typo3v11',
         'Frontend',
         [
-            \SchamsNet\Typo3v11\Controller\ExampleController::class => 'list, detail'
+            \SchamsNet\Typo3v11\Controller\ExampleController::class => 'list, show'
         ],
         [
-            \SchamsNet\Typo3v11\Controller\ExampleController::class => 'list, detail'
+            \SchamsNet\Typo3v11\Controller\ExampleController::class => 'list, show'
         ]
     );
 })();
