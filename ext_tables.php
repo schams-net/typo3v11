@@ -15,11 +15,11 @@ defined('TYPO3') or die();
 // encapsulate all locally defined variables
 (function () {
     // Domain model "Example"
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
+    ExtensionManagementUtility::addLLrefForTCAdescr(
         'tx_typo3v11_domain_model_example',
         'EXT:simpleblog/Resources/Private/Language/locallang_csh_tx_typo3v11_domain_model_example.xlf'
     );
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages(
+    ExtensionManagementUtility::allowTableOnStandardPages(
         'tx_typo3v11_domain_model_example'
     );
 })();

@@ -6,6 +6,8 @@ declare(strict_types=1);
  * @author Michael Schams | https://schams.net
  */
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3_MODE') or die();
 
 call_user_func(function () {
@@ -18,5 +20,5 @@ call_user_func(function () {
             ],
         ],
     ];
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
+    ExtensionManagementUtility::addTCAcolumns('pages', $additionalColumns);
 });

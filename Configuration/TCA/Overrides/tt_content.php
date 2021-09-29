@@ -6,9 +6,11 @@ declare(strict_types=1);
  * @author Michael Schams | https://schams.net
  */
 
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
 defined('TYPO3_MODE') or die();
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+ExtensionUtility::registerPlugin(
     'Typo3v11',
     'Frontend',
     //'LLL:EXT:typo3v11/Resources/Private/Language/locallang_be.xlf:title',
