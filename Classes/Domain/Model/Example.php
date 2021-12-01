@@ -13,22 +13,16 @@ class Example extends AbstractEntity
 {
     /**
      * Title
-     *
-     * @var string
      */
-    protected $title = '';
+    protected string $title = '';
 
     /**
      * Creation timestamp
-     *
-     * @var \DateTime
      */
-    protected $crdate;
+    protected \DateTime $crdate;
 
     /**
      * Returns the title
-     *
-     * @return string $title
      */
     public function getTitle(): string
     {
@@ -36,10 +30,15 @@ class Example extends AbstractEntity
     }
 
     /**
+     * Returns the title in upper-case
+     */
+    public function getUpperCaseTitle(): string
+    {
+        return strtoupper($this->title);
+    }
+
+    /**
      * Sets the title
-     *
-     * @param string $title
-     * @return void
      */
     public function setTitle(string $title): void
     {
@@ -48,8 +47,6 @@ class Example extends AbstractEntity
 
     /**
      * Returns the creation timestamp
-     *
-     * @return \DateTime
      */
     public function getCrdate(): \DateTime
     {
